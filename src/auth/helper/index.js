@@ -3,7 +3,7 @@ import { API } from "../../backend";
 // these methods take the data from the front end and send them to the backend database just like we do in the // postman
 // signUp request...........................................
 export const signup = (user) => {
-  return fetch(`${API}/signup`, {
+  return fetch(`${API}signup`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -19,7 +19,7 @@ export const signup = (user) => {
 
 // signIn request..............................................
 export const signin = (user) => {
-  return fetch(`${API}/signin`, {
+  return fetch(`${API}signin`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -45,7 +45,7 @@ export const signout = (next) => {
     localStorage.removeItem("jwt");
     next();
 
-    return fetch(`${API}/signout`, {
+    return fetch(`${API}signout`, {
       method: "GET",
     })
       .then((response) => console.log("signout success"))
