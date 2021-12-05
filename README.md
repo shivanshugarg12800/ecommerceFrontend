@@ -3,7 +3,7 @@
 This repository contains the Backend part of the main project.
 
 Click here for BACKEND PART....
-<br>[Click here👈](https://github.com/shivanshugarg12800/Tees-and-S-Frontend)
+<br>[Click here👈](https://github.com/shivanshugarg12800/EcommerceBackend)
 
 To view the application you need to run both Backend and Frontend simultaneously.
 
