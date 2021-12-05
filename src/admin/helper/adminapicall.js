@@ -3,7 +3,7 @@ const { API } = require("../../backend");
 
 // create product....................................
 export const createProduct = (userId, token, product) => {
-  return fetch(`${API}/product/create/${userId}`, {
+  return fetch(`${API}product/create/${userId}`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -19,7 +19,7 @@ export const createProduct = (userId, token, product) => {
 
 // get all products................................
 export const getAllProducts = () => {
-  return fetch(`${API}/products`, {
+  return fetch(`${API}products`, {
     method: "GET",
   })
     .then((response) => {
@@ -30,7 +30,7 @@ export const getAllProducts = () => {
 
 // update the product......................
 export const updateProduct = (userId, token, productId, product) => {
-  return fetch(`${API}/product/${productId}/${userId}`, {
+  return fetch(`${API}product/${productId}/${userId}`, {
     method: "PUT",
     headers: {
       Accept: "application/json",
@@ -46,7 +46,7 @@ export const updateProduct = (userId, token, productId, product) => {
 
 // delete the product..............................
 export const deleteProduct = (userId, token, productId) => {
-  return fetch(`${API}/product/${productId}/${userId}`, {
+  return fetch(`${API}product/${productId}/${userId}`, {
     method: "DELETE",
     headers: {
       Accept: "application/json",
@@ -61,7 +61,7 @@ export const deleteProduct = (userId, token, productId) => {
 
 // get a product...................................
 export const getOneProduct = (productId) => {
-  return fetch(`${API}/product/${productId}`, {
+  return fetch(`${API}product/${productId}`, {
     method: "GET",
   })
     .then((response) => {
